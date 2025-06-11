@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Information -->
+    <key>CFBundleDisplayName</key>
+    <string>ChatApp</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourcompany.chatapp</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    
+    <!-- Privacy Permissions -->
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs access to camera to take photos for chat messages.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app needs access to photo library to share images in chat.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app needs access to microphone to record voice messages.</string>
+    
+    <!-- Network Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>13.127.170.51</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.0</string>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- App Icon -->
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon</string>
+            </array>
+        </dict>
+    </dict>
+    
+    <!-- Supported Interface Orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- iOS Deployment Target -->
+    <key>MinimumOSVersion</key>
+    <string>18.4</string>
+    
+    <!-- Launch Screen -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIImageName</key>
+        <string>LaunchImage</string>
+        <key>UIColorName</key>
+        <string>LaunchBackgroundColor</string>
+    </dict>
+</dict>
+</plist>
